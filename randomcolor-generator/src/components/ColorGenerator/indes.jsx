@@ -20,6 +20,7 @@ export default function RandomColorGenerator() {
   }
 
   function generateHexColor() {
+    setRgbColor([]);
     const hexColorArr = randomColorHandler("HEX");
     setHexColor(hexColorArr.join(""));
   }
@@ -45,7 +46,11 @@ export default function RandomColorGenerator() {
           <h1>Random Color Generator</h1>
         </div>
         <div>
-          <h1>HEX Color #{hexColor}</h1>
+          <h1>
+            {rgbColor.length > 1
+              ? `RGB ${rgbColor[0]},${rgbColor[1]},${rgbColor[2]}`
+              : `HEX Color # ${hexColor}`}
+          </h1>
         </div>
         <div>
           <button onClick={generateHexColor}>Random Color</button>
