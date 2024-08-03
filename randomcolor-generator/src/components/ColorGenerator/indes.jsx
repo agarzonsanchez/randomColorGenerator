@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./styles.css";
 
 export default function RandomColorGenerator() {
   const [hexColor, setHexColor] = useState([]);
@@ -35,6 +36,7 @@ export default function RandomColorGenerator() {
   return (
     <div>
       <div
+        className="container-item"
         style={{
           backgroundColor:
             hexColor.length > 1
@@ -53,9 +55,15 @@ export default function RandomColorGenerator() {
           </h1>
         </div>
         <div>
-          <button onClick={generateHexColor}>Random Color</button>
-          <button onClick={generateHexColor}>Hex Color</button>
-          <button onClick={generateRGBColor}>RGB Color</button>
+          <button className="button-style" onClick={generateHexColor}>
+            Random Color
+          </button>
+          <button className="button-style" onClick={generateHexColor}>
+            Hex Color
+          </button>
+          <button className="button-style" onClick={generateRGBColor}>
+            RGB Color
+          </button>
         </div>
       </div>
     </div>

@@ -1,0 +1,21 @@
+.container-item {
+  height: 950px;
+  margin: -25px;
+  padding-top: 25px;
+}
+
+.button-style {
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: 1px solid #f2cc0f;
+  background-color: #f2cc0f;
+  margin: 5px;
+  color: #000000;
+  box-shadow: 2px 2px 0 0 #0d0d0d;
+}
+.button-style:hover {
+  background-color: #f2e5a2;
+  border: 1px solid #f2e5a2;
+  box-shadow: 2px 2px 0 0 #c5ced9;
+}
